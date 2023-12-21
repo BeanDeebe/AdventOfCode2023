@@ -38,6 +38,9 @@ class Solution
         ballTable.Add("green", 13);
         ballTable.Add("blue", 14);
         ballTable.Add("gameSum", 0);
+        ballTable.Add("redMax", 0);
+        ballTable.Add("greenMax", 0);
+        ballTable.Add("blueMax", 0);
 
         return ballTable;
     }
@@ -51,6 +54,9 @@ class Solution
         ballTable["red"] = 12;
         ballTable["green"] = 13;
         ballTable["blue"] = 14;
+        ballTable["redMax"] = 0;
+        ballTable["greenMax"] = 0;
+        ballTable["blueMax"] = 0;
 
     }
 
@@ -60,93 +66,88 @@ class Solution
     /// <param name="game">each round of the game, broken up into array values</param>
     /// <param name="gameTable">the hashtable to keep track of ball counts</param>
     /// <returns>Returns whether the game was valid or not</returns>
-    private static bool UpdateBallCount(string[] game, Hashtable gameTable, int counter)
+    private static void UpdateBallCount(string[] game, Hashtable gameTable)
     {
         int deductVal;
         int currColorVal;
+        int currentMaxVal;
 
         foreach (var ball in game)
         {
             ball.Trim();
             string[] newBall = ball.Split(" ");
             int.TryParse(newBall[1].ToString(), out deductVal);
-
             if (ball.Contains("red"))
             {
+                int.TryParse(gameTable["redMax"].ToString(), out currentMaxVal);
+                if (currentMaxVal < deductVal)
+                {
+                    gameTable["redMax"] = deductVal;
+                }
                 int.TryParse(gameTable["red"].ToString(), out currColorVal);
                 gameTable["red"] = currColorVal - deductVal;
             }
             else if (ball.Contains("blue"))
             {
+                int.TryParse(gameTable["blueMax"].ToString(), out currentMaxVal);
+                if (currentMaxVal < deductVal)
+                {
+                    gameTable["blueMax"] = deductVal;
+                }
                 int.TryParse(gameTable["blue"].ToString(), out currColorVal);
                 gameTable["blue"] = currColorVal - deductVal;
 
             }
             else if (ball.Contains("green"))
             {
+                int.TryParse(gameTable["greenMax"].ToString(), out currentMaxVal);
+                if (currentMaxVal < deductVal)
+                {
+                    gameTable["greenMax"] = deductVal;
+                }
                 int.TryParse(gameTable["green"].ToString(), out currColorVal);
                 gameTable["green"] = currColorVal - deductVal;
             }
 
         }
-        return CheckBallCount(gameTable);
     }
 
-    /// <summary>
-    /// Checks the Hashtable to see if the ball counts are positive or negative, then resets the ball count to the original values.
-    /// </summary>
-    /// <param name="gameTable">Hashtable for keeping track of ball counts</param>
-    /// <returns>true if count is >= 0, false otherwise.</returns>
-    private static bool CheckBallCount(Hashtable gameTable)
-    {
-        if
-        (
-            int.Parse(gameTable["red"].ToString()) < 0
-            || int.Parse(gameTable["blue"].ToString()) < 0
-            || int.Parse(gameTable["green"].ToString()) < 0
-        )
-        {
-            ResetBallCount(gameTable);
-            return false;
-        }
-        else
-        {
-            ResetBallCount(gameTable);
-            return true;
-        }
-    }
     static void Main()
     {
         Hashtable gameTable = InitBallTable();
         int counter = 1;
         string line;
+        List<int> powers = [];
 
         // Reads text file as input, and adds up the value of valid game rounds.
         using StreamReader reader = File.OpenText("./input2.txt");
         while ((line = reader.ReadLine()) != null)
         {
             List<string> resultGame = SanitizeString(line);
-            bool stillValid = true;
             foreach (var result in resultGame)
             {
                 string[] game = result.Split(",");
-                stillValid = UpdateBallCount(game, gameTable, counter);
-                if (!stillValid)
-                {
-                    break;
-                }
-            }
-            if (stillValid)
-            {
-                int updatedGameRoundValue;
-                int.TryParse(gameTable["gameSum"].ToString(), out updatedGameRoundValue);
-                gameTable["gameSum"] = updatedGameRoundValue + counter;
-            }
+                UpdateBallCount(game, gameTable);
 
-            counter++;
+
+            }
+            int redMax = int.Parse(gameTable["redMax"].ToString());
+            int greenMax = int.Parse(gameTable["greenMax"].ToString());
+            int blueMax = int.Parse(gameTable["blueMax"].ToString());
+
+            powers.Add(redMax * greenMax * blueMax);
+
+            ResetBallCount(gameTable);
         }
 
-        Console.WriteLine("gameSum = {0}", gameTable["gameSum"].ToString());
+        int finalSum = 0;
+
+        foreach (var answers in powers)
+        {
+            finalSum += answers;
+        }
+
+        Console.WriteLine("Final sum: {0}", finalSum);
 
     }
 }
