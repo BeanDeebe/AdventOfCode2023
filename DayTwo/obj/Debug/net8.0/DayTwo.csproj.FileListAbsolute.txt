@@ -1,0 +1,14 @@
+/Users/deanbeebe/csharp/AoC1/DayTwo/bin/Debug/net8.0/DayTwo
+/Users/deanbeebe/csharp/AoC1/DayTwo/bin/Debug/net8.0/DayTwo.deps.json
+/Users/deanbeebe/csharp/AoC1/DayTwo/bin/Debug/net8.0/DayTwo.runtimeconfig.json
+/Users/deanbeebe/csharp/AoC1/DayTwo/bin/Debug/net8.0/DayTwo.dll
+/Users/deanbeebe/csharp/AoC1/DayTwo/bin/Debug/net8.0/DayTwo.pdb
+/Users/deanbeebe/csharp/AoC1/DayTwo/obj/Debug/net8.0/DayTwo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/deanbeebe/csharp/AoC1/DayTwo/obj/Debug/net8.0/DayTwo.AssemblyInfoInputs.cache
+/Users/deanbeebe/csharp/AoC1/DayTwo/obj/Debug/net8.0/DayTwo.AssemblyInfo.cs
+/Users/deanbeebe/csharp/AoC1/DayTwo/obj/Debug/net8.0/DayTwo.csproj.CoreCompileInputs.cache
+/Users/deanbeebe/csharp/AoC1/DayTwo/obj/Debug/net8.0/DayTwo.dll
+/Users/deanbeebe/csharp/AoC1/DayTwo/obj/Debug/net8.0/refint/DayTwo.dll
+/Users/deanbeebe/csharp/AoC1/DayTwo/obj/Debug/net8.0/DayTwo.pdb
+/Users/deanbeebe/csharp/AoC1/DayTwo/obj/Debug/net8.0/DayTwo.genruntimeconfig.cache
+/Users/deanbeebe/csharp/AoC1/DayTwo/obj/Debug/net8.0/ref/DayTwo.dll
