@@ -6,6 +6,11 @@ using System.Xml.XPath;
 class Solution
 {
 
+    /// <summary>
+    /// Takes the game string and splits it into each 'round' of the game.
+    /// </summary>
+    /// <param name="gameRound">game string</param>
+    /// <returns></returns>
     private static List<string> SanitizeString(string gameRound)
     {
         gameRound = gameRound.Remove(0, 7);
@@ -22,6 +27,10 @@ class Solution
 
     }
 
+    /// <summary>
+    /// creates the Hashtable to keep track of the balls / gameSum count.
+    /// </summary>
+    /// <returns></returns>
     private static Hashtable InitBallTable()
     {
         Hashtable ballTable = new Hashtable();
@@ -33,6 +42,10 @@ class Solution
         return ballTable;
     }
 
+    /// <summary>
+    /// Resets ball count to original values
+    /// </summary>
+    /// <param name="ballTable">Hashtable with ball counts and gameSum</param>
     private static void ResetBallCount(Hashtable ballTable)
     {
         ballTable["red"] = 12;
@@ -41,7 +54,13 @@ class Solution
 
     }
 
-    private static bool updateBallCount(string[] game, Hashtable gameTable, int counter)
+    /// <summary>
+    /// "Scores" the game by deducting the appropriate ball color.
+    /// </summary>
+    /// <param name="game">each round of the game, broken up into array values</param>
+    /// <param name="gameTable">the hashtable to keep track of ball counts</param>
+    /// <returns>Returns whether the game was valid or not</returns>
+    private static bool UpdateBallCount(string[] game, Hashtable gameTable, int counter)
     {
         int deductVal;
         int currColorVal;
@@ -70,10 +89,15 @@ class Solution
             }
 
         }
-        return CheckBallCount(gameTable, counter);
+        return CheckBallCount(gameTable);
     }
 
-    private static bool CheckBallCount(Hashtable gameTable, int counter)
+    /// <summary>
+    /// Checks the Hashtable to see if the ball counts are positive or negative, then resets the ball count to the original values.
+    /// </summary>
+    /// <param name="gameTable">Hashtable for keeping track of ball counts</param>
+    /// <returns>true if count is >= 0, false otherwise.</returns>
+    private static bool CheckBallCount(Hashtable gameTable)
     {
         if
         (
@@ -97,6 +121,7 @@ class Solution
         int counter = 1;
         string line;
 
+        // Reads text file as input, and adds up the value of valid game rounds.
         using StreamReader reader = File.OpenText("./input2.txt");
         while ((line = reader.ReadLine()) != null)
         {
@@ -105,7 +130,7 @@ class Solution
             foreach (var result in resultGame)
             {
                 string[] game = result.Split(",");
-                stillValid = updateBallCount(game, gameTable, counter);
+                stillValid = UpdateBallCount(game, gameTable, counter);
                 if (!stillValid)
                 {
                     break;
