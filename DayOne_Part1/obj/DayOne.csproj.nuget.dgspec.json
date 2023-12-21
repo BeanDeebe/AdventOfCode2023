@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/deanbeebe/csharp/AoC1/DayOne/DayOne.csproj": {}
+    "/Users/deanbeebe/csharp/AdventOfCode2023/DayOne_Part1/DayOne.csproj": {}
   },
   "projects": {
-    "/Users/deanbeebe/csharp/AoC1/DayOne/DayOne.csproj": {
+    "/Users/deanbeebe/csharp/AdventOfCode2023/DayOne_Part1/DayOne.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/deanbeebe/csharp/AoC1/DayOne/DayOne.csproj",
+        "projectUniqueName": "/Users/deanbeebe/csharp/AdventOfCode2023/DayOne_Part1/DayOne.csproj",
         "projectName": "DayOne",
-        "projectPath": "/Users/deanbeebe/csharp/AoC1/DayOne/DayOne.csproj",
+        "projectPath": "/Users/deanbeebe/csharp/AdventOfCode2023/DayOne_Part1/DayOne.csproj",
         "packagesPath": "/Users/deanbeebe/.nuget/packages/",
-        "outputPath": "/Users/deanbeebe/csharp/AoC1/DayOne/obj/",
+        "outputPath": "/Users/deanbeebe/csharp/AdventOfCode2023/DayOne_Part1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/deanbeebe/.nuget/NuGet/NuGet.Config"

@@ -1,0 +1,15 @@
+/Users/deanbeebe/csharp/AdventOfCode2023/DayTwo_AoC/bin/Debug/net8.0/DayTwo_AoC
+/Users/deanbeebe/csharp/AdventOfCode2023/DayTwo_AoC/bin/Debug/net8.0/DayTwo_AoC.deps.json
+/Users/deanbeebe/csharp/AdventOfCode2023/DayTwo_AoC/bin/Debug/net8.0/DayTwo_AoC.runtimeconfig.json
+/Users/deanbeebe/csharp/AdventOfCode2023/DayTwo_AoC/bin/Debug/net8.0/DayTwo_AoC.dll
+/Users/deanbeebe/csharp/AdventOfCode2023/DayTwo_AoC/bin/Debug/net8.0/DayTwo_AoC.pdb
+/Users/deanbeebe/csharp/AdventOfCode2023/DayTwo_AoC/obj/Debug/net8.0/DayTwo_AoC.GeneratedMSBuildEditorConfig.editorconfig
+/Users/deanbeebe/csharp/AdventOfCode2023/DayTwo_AoC/obj/Debug/net8.0/DayTwo_AoC.AssemblyInfoInputs.cache
+/Users/deanbeebe/csharp/AdventOfCode2023/DayTwo_AoC/obj/Debug/net8.0/DayTwo_AoC.AssemblyInfo.cs
+/Users/deanbeebe/csharp/AdventOfCode2023/DayTwo_AoC/obj/Debug/net8.0/DayTwo_AoC.csproj.CoreCompileInputs.cache
+/Users/deanbeebe/csharp/AdventOfCode2023/DayTwo_AoC/obj/Debug/net8.0/DayTwo_AoC.sourcelink.json
+/Users/deanbeebe/csharp/AdventOfCode2023/DayTwo_AoC/obj/Debug/net8.0/DayTwo_AoC.dll
+/Users/deanbeebe/csharp/AdventOfCode2023/DayTwo_AoC/obj/Debug/net8.0/refint/DayTwo_AoC.dll
+/Users/deanbeebe/csharp/AdventOfCode2023/DayTwo_AoC/obj/Debug/net8.0/DayTwo_AoC.pdb
+/Users/deanbeebe/csharp/AdventOfCode2023/DayTwo_AoC/obj/Debug/net8.0/DayTwo_AoC.genruntimeconfig.cache
+/Users/deanbeebe/csharp/AdventOfCode2023/DayTwo_AoC/obj/Debug/net8.0/ref/DayTwo_AoC.dll

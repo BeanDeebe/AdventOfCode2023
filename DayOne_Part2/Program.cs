@@ -77,7 +77,6 @@ class Program
 
                 int addToRes;
                 int.TryParse(sb.ToString(), out addToRes);
-                Console.WriteLine("line: {0} || result added: {1}", line, addToRes);
                 result += addToRes;
 
             }

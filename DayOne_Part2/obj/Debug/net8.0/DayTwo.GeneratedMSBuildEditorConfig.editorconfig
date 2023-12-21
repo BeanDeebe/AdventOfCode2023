@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DayTwo
-build_property.ProjectDir = /Users/deanbeebe/csharp/AoC1/DayTwo/
+build_property.ProjectDir = /Users/deanbeebe/csharp/AdventOfCode2023/DayOne_Part2/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

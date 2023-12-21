@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/deanbeebe/csharp/AoC1/DayTwo/DayTwo.csproj",
+      "projectUniqueName": "/Users/deanbeebe/csharp/AdventOfCode2023/DayOne_Part2/DayTwo.csproj",
       "projectName": "DayTwo",
-      "projectPath": "/Users/deanbeebe/csharp/AoC1/DayTwo/DayTwo.csproj",
+      "projectPath": "/Users/deanbeebe/csharp/AdventOfCode2023/DayOne_Part2/DayTwo.csproj",
       "packagesPath": "/Users/deanbeebe/.nuget/packages/",
-      "outputPath": "/Users/deanbeebe/csharp/AoC1/DayTwo/obj/",
+      "outputPath": "/Users/deanbeebe/csharp/AdventOfCode2023/DayOne_Part2/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/deanbeebe/.nuget/NuGet/NuGet.Config"

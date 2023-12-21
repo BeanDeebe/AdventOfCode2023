@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QlK5Gp33sZtiR70tRob5haZQXgsnWwHSEfIAkhxcyB/KRJ8Ww6PCGCGUXLMpwjr1WaRy5FPC73UTfYOFKPBmZA==",
+  "dgSpecHash": "78LvxPoLiGBlCmQaOnJbwByCPUKQqS7VR42Ke1uZJUSWISAh6B6dT0gjm09W1SLsfOfM0WrPtcTq3N73hghz2g==",
   "success": true,
-  "projectFilePath": "/Users/deanbeebe/csharp/AoC1/DayTwo/DayTwo.csproj",
+  "projectFilePath": "/Users/deanbeebe/csharp/AdventOfCode2023/DayOne_Part2/DayTwo.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
